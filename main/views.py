@@ -7,10 +7,6 @@ from goods.models import Categories
 def index(request):
 
     categories = Categories.objects.all()
-    if categories:
-        print(categories)
-    else:
-        print('not')
 
     context = {
         'title': 'Home - Главная',
