@@ -31,9 +31,9 @@ class Products(models.Model):
         ordering = ('id',)
 
     def __str__(self):
-        return self.name
+        return f'{self.name} Количество - {self.quantity}'
     
-    def display_price(self):
+    def display_id(self):
         return f'{self.id:05}'
     
     def sell_price(self):
